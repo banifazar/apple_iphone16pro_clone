@@ -1,3 +1,4 @@
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import TradePromo from "./components/TradePromo";
 
@@ -6,6 +7,7 @@ function App() {
     <main className="bg-black">
       <Navbar />
       <TradePromo />
+      <Hero />
     </main>
   );
 }

@@ -3,7 +3,7 @@ import { appleImg, bagImg, searchImg } from "../utils";
 
 const Navbar = () => {
   return (
-    <header className="w-full py-4 sm:px-10 px-5 flex justify-between items-center">
+    <header className="w-full py-[15px] sm:px-10 px-2 flex justify-between items-center">
       <nav className="flex w-full screen-max-width justify-center gap-5">
         <img src={appleImg} alt="Apple" width={12} height={16} />
 
@@ -11,7 +11,7 @@ const Navbar = () => {
           {navLists.map((nav) => (
             <div
               key={nav}
-              className="px-4 text-xs text-gray hover:text-white cursor-pointer transition-all"
+              className="px-4 text-xs font-extralight text-gray-200 hover:text-white cursor-pointer transition-all"
             >
               {nav}
             </div>
