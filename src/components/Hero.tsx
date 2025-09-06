@@ -34,7 +34,7 @@ const Hero = () => {
 
     gsap.from("#headline", {
       scale: 1.1,
-      duration: 1.5,
+      duration: 2,
       opacity: 0.2,
       ease: "power1.in",
     });
