@@ -3,22 +3,22 @@ import { appleImg, bagImg, searchImg } from "../utils";
 
 const Navbar = () => {
   return (
-    <header className="w-full py-[15px] sm:px-10 px-2 flex justify-between items-center">
-      <nav className="flex w-full screen-max-width justify-center gap-5">
+    <header className="relative z-10 flex w-full items-center justify-between px-2 py-[15px] sm:px-10">
+      <nav className="screen-max-width flex w-full justify-center gap-5">
         <img src={appleImg} alt="Apple" width={12} height={16} />
 
-        <div className="flex justify-center items-center max-sm:hidden">
+        <div className="flex items-center justify-center max-sm:hidden">
           {navLists.map((nav) => (
             <div
               key={nav}
-              className="px-4 text-xs font-extralight text-gray-200 hover:text-white cursor-pointer transition-all"
+              className="cursor-pointer px-4 text-xs font-extralight text-gray-200 transition-all hover:text-white"
             >
               {nav}
             </div>
           ))}
         </div>
 
-        <div className="flex justify-between items-baseline gap-10 max-sm:justify-end max-sm:flex-1">
+        <div className="flex items-baseline justify-between gap-10 max-sm:flex-1 max-sm:justify-end">
           <img
             src={searchImg}
             alt="search"

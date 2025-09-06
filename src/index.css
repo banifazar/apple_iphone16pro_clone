@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@tailwind utilities;
+
+@utility nav-height {
+  height: calc(100vh - 150px);
+}
+
 @theme {
   --color-blue: #2997ff;
 
@@ -9,6 +15,10 @@
   --color-gray-300: #42424570;
 
   --color-zinc: #101010;
+
+  --color-hero-title: #f7edf0;
+
+  --color-btn: #0171e2;
 }
 
 @layer base {
@@ -35,15 +45,15 @@
 
 @layer components {
   .screen-max-width {
-    @apply mx-auto relative max-w-[1120px];
+    @apply relative mx-auto max-w-[1120px];
   }
 
   .link {
-    @apply text-blue hover:underline cursor-pointer flex items-center font-light;
+    @apply text-blue flex cursor-pointer items-center font-light hover:underline;
   }
 
   .nav-height {
-    @apply h-[calc(100vh-60px)];
+    @apply h-[calc(100vh-100px)];
   }
 
   .flex-center {
@@ -51,6 +61,10 @@
   }
 
   .hero-title {
-    @apply text-center font-semibold text-3xl text-gray-100 opacity-0 max-md:mb-10;
+    @apply text-hero-title text-center text-xl leading-[1rem] font-medium sm:text-[1.8rem];
+  }
+
+  .btn {
+    @apply bg-btn hover:text-blue hover:border-blue my-5 rounded-3xl border border-transparent px-5 py-2 hover:border hover:bg-transparent;
   }
 }
