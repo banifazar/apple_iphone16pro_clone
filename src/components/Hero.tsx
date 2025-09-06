@@ -24,14 +24,6 @@ const Hero = () => {
   }, []);
 
   useGSAP(() => {
-    gsap.to(".hero-title", {
-      y: 0,
-      delay: 0.5,
-      duration: 1,
-      opacity: 1,
-      ease: "power4.out",
-    });
-
     gsap.to("#cta", {
       y: 0,
       delay: 1,
